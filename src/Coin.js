@@ -12,8 +12,8 @@ const Coin = (props) => {
           <p className='coin-symbol'>{props.symbol}</p>
         </div>
         <div className='coin-data'>
-          <p className='coin-price'>${props.price}</p>
-          <p className='coin-volume'>${props.volume}</p>
+          <p className='coin-price'>INR {props.price}</p>
+          <p className='coin-volume'>INR {props.volume}</p>
 
           {props.priceChange < 0 ? (
             <p className='coin-percent red'>{props.priceChange.toFixed(2)}%</p>
@@ -22,7 +22,7 @@ const Coin = (props) => {
           )}
 
           <p className='coin-marketcap'>
-            Mkt Cap: ${props.marketcap.toLocaleString()}
+            Mkt Cap: INR {props.marketcap}
           </p>
         </div>
       </div>
